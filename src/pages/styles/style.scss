@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* ------------------------------
+基本 
+--------------------------------*/
+$font-stack: Noto Sans JP, sans-serif;
+$primary-color: #222222;
+
+
+body {
+    font-family: $font-stack;
+    color: $primary-color;
+    text-align: center;
+}
