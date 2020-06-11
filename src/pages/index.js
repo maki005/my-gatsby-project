@@ -2,9 +2,14 @@ import React from "react"
 import './styles/style.scss'
 import { graphql } from "gatsby"
 
-export default function Home() {
+import Header from "../pages/components/header.js"
+import Footer from "../pages/components/footer.js"
+
+export default function Home({ data }) {
   return (
     <div>
+      <Header />
+
       <section id="eyecatch">
         <h1>Hello Gatsby!</h1>
       </section>
@@ -12,10 +17,9 @@ export default function Home() {
       <section className="wrap">
         <h2>Works</h2>
           <ul>
-            <li>自社採用サイト</li>
-            <li>商品検索システム</li>
-            <li>ナレッジ検索システム</li>
-            <li>契約管理システム</li>
+            {data.allContentfulBlogPost.nodes.map(({ title }) => (
+            <li>{title}</li>
+          ))}
           </ul>
       </section>
 
@@ -28,6 +32,19 @@ export default function Home() {
       </section>
 
       <img src="/images/news.png" alt="アイコン" />
+
+      <Footer />
     </div>
+
   )
 }
+
+export const query = graphql`
+query {
+  allContentfulBlogPost(sort: {fields: id, order: DESC}) {
+    nodes {
+      title
+    }
+  }
+}
+`
