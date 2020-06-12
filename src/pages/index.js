@@ -1,6 +1,6 @@
 import React from "react"
 import './styles/style.scss'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Header from "../pages/components/header.js"
 import Footer from "../pages/components/footer.js"
@@ -17,8 +17,10 @@ export default function Home({ data }) {
       <section className="wrap">
         <h2>Works</h2>
           <ul>
-            {data.allContentfulBlogPost.nodes.map(({ title }) => (
-            <li>{title}</li>
+            {data.allContentfulBlogPost.edges.map(({ node }) => (
+              <Link to={`/work/post/${node.slug}`}>
+              <li key={node.id}>{node.title}</li>
+              </Link>
           ))}
           </ul>
       </section>
@@ -42,8 +44,12 @@ export default function Home({ data }) {
 export const query = graphql`
 query {
   allContentfulBlogPost(sort: {fields: id, order: DESC}) {
-    nodes {
-      title
+    edges {
+      node {
+        title
+        id
+        slug
+      }
     }
   }
 }
