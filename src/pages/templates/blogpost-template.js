@@ -54,7 +54,7 @@ export default function Work({ data }) {
     )
 }
 
- export const query  = graphql`
+export const query  = graphql`
 query($id: String!) {
     contentfulBlogPost(id: { eq: $id }) {
         title
