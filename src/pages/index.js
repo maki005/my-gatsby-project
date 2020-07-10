@@ -15,7 +15,7 @@ export default function Home({ data }) {
       </section>
 
       <section className="wrap">
-        <h2>Works</h2>
+        <h2>Post</h2>
           <ul>
             {data.allContentfulBlogPost.edges.map(({ node }) => (
               <Link to={`/work/post/${node.slug}`}>
@@ -26,7 +26,7 @@ export default function Home({ data }) {
       </section>
 
       <section className="wrap">
-        <h2>Profile</h2>
+        <h2>Contact</h2>
       </section>
 
       <section className="wrap">
