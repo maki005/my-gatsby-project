@@ -1,6 +1,7 @@
 import React from "react"
 import './styles/style.scss'
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../pages/components/layout.js"
 import SEO from "../pages/components/seo.js"
@@ -12,16 +13,20 @@ export default function Home({ data }) {
       <SEO />
       <Eyecatch />
 
-
+      {data.allContentfulBlogPost.edges.map(({ node }) => (
       <section className="wrap">
-          <ul>
-            {data.allContentfulBlogPost.edges.map(({ node }) => (
-              <Link to={`/work/post/${node.slug}`}>
-              <li key={node.id}>{node.title}</li>
-              </Link>
-          ))}
-          </ul>
+        <article key={node.id}>
+          <Link to ={`/work/post/${node.slug}`}>
+          <figure>
+              <Img
+                fluid={node.eyecatch.fluid}
+                alt="画像説明"
+              />
+          </figure>
+          </Link>
+        </article>
       </section>
+      ))}
 
       <section className="wrap">
         <h2 className="sub_title">できること</h2>
@@ -57,12 +62,17 @@ export default function Home({ data }) {
 
 export const query = graphql`
 query {
-  allContentfulBlogPost(sort: {fields: id, order: DESC}) {
+  allContentfulBlogPost(sort: {fields: publishDate, order: DESC}) {
     edges {
       node {
         title
-        id
         slug
+        id
+        eyecatch {
+          fluid(maxWidth: 200){
+            ...GatsbyContentfulFluid_withWebp
+          }
+        }
       }
     }
   }
