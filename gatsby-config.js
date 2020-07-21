@@ -9,6 +9,11 @@ require('dotenv').config({path:`./.env.${env}`});
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `TEST`,
+    description: `ポートフォリオサイト`,
+    lang: `ja`,
+  },
   plugins: [
     `gatsby-plugin-sass`,
     {
@@ -19,7 +24,15 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST,
       },
     },
-  
-  
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/images`,
+      },
+    },
+    `gatsby-plugin-react-helmet`
   ],
 }
