@@ -2,20 +2,18 @@ import React from "react"
 import './styles/style.scss'
 import { graphql, Link } from "gatsby"
 
-import Header from "../pages/components/header.js"
-import Footer from "../pages/components/footer.js"
+import Layout from "../pages/components/layout.js"
+import SEO from "../pages/components/seo.js"
+import Eyecatch from "../pages/components/eyecatch.js"
 
 export default function Home({ data }) {
   return (
-    <div>
-      <Header />
+    <Layout>
+      <SEO />
+      <Eyecatch />
 
-      <section id="eyecatch">
-        <h1>Hello Gatsby!</h1>
-      </section>
 
       <section className="wrap">
-        <h2>Post</h2>
           <ul>
             {data.allContentfulBlogPost.edges.map(({ node }) => (
               <Link to={`/work/post/${node.slug}`}>
@@ -26,17 +24,33 @@ export default function Home({ data }) {
       </section>
 
       <section className="wrap">
-        <h2>Contact</h2>
+        <h2 className="sub_title">できること</h2>
+        <div className="d_flex">
+          <div className="card">
+            <h3>UIデザイン</h3>
+            <p>BtoB自社製品のデザインを担当しています。Adobe XDでのモックからHTML/CSSまでを担当</p>
+          </div>
+          <div className="card">
+            <h3>Webデザイン</h3>
+            <p>自社システムの紹介サイトを管理WordPressで運営していました。LPや自社採用ページなどを作成</p>
+          </div>
+          <div className="card">
+            <h3>エンジニアと</h3>
+            <p>エンジニアと共同でプロジェクトをすすめることがほとんど。ローカル環境構築やGithubでのソース管理など。</p>
+          </div>
+        </div>
       </section>
 
       <section className="wrap">
-        日報・Twitter
+        <h2 className="sub_title">プロフィール</h2>
+        <p>
+          高知大学人文学部卒業。転職活動をするうちにこれからの動向を検討し、IT業界への就職を決め
+          未経験で現在の会社に新卒入社。Web UIデザイナーとして自社システムのUIを担当。
+          知らないことを知れる、できないことができるということに喜びを感じる人間です。
+        </p>
       </section>
 
-      <img src="/images/news.png" alt="アイコン" />
-
-      <Footer />
-    </div>
+    </Layout>
 
   )
 }
