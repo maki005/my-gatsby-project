@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+.eyecatch {
+    background: url(/images/eyecatch.svg)no-repeat right;
+    /* background-size: cover; */
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    text-indent: -9999px;
+}
+
+.summary {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: left;
+}
