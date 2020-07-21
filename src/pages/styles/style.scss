@@ -116,18 +116,14 @@ input, select {
 --------------------------------*/
 $font-stack: Noto Sans JP, sans-serif;
 $primary-color: #222222;
+$main-blue: #0B315E;
 
 
 body {
     font-family: $font-stack;
     color: $primary-color;
     text-align: center;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 2.2em;
-    padding-top: 80px;
+    font-size: 14px;
 }
 
 .wrap {
@@ -135,9 +131,35 @@ h1 {
     margin: 0 auto 100px;
 }
 
+.sub_title {
+    color: $main-blue;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 
-#eyecatch {
-    background: url(/images/Tsunoshima-ohashi_Bridge-l.jpg)no-repeat center;
-    background-size: cover;
-    height: 600px;
+/* ------------------------------
+できること
+--------------------------------*/
+
+.d_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 30%;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: inherit;
+    margin-bottom: 20px;
+}
+
+.card p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
 }
