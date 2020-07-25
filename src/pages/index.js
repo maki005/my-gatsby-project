@@ -13,20 +13,18 @@ export default function Home({ data }) {
       <SEO />
       <Eyecatch />
 
+      <section className="wrap wrap_work">
       {data.allContentfulBlogPost.edges.map(({ node }) => (
-      <section className="wrap">
-        <article key={node.id}>
           <Link to ={`/work/post/${node.slug}`}>
-          <figure>
+          <figure className="img_workTop">
               <Img
                 fluid={node.eyecatch.fluid}
                 alt="画像説明"
               />
           </figure>
           </Link>
-        </article>
-      </section>
       ))}
+      </section>
 
       <section className="wrap">
         <h2 className="sub_title">できること</h2>
@@ -62,14 +60,14 @@ export default function Home({ data }) {
 
 export const query = graphql`
 query {
-  allContentfulBlogPost(sort: {fields: publishDate, order: DESC}) {
+  allContentfulBlogPost {
     edges {
       node {
         title
         slug
         id
         eyecatch {
-          fluid(maxWidth: 200){
+          fluid(maxWidth: 2000){
             ...GatsbyContentfulFluid_withWebp
           }
         }
