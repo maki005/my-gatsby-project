@@ -2,18 +2,20 @@
 
 
 .eyecatch {
-    background: url(/images/eyecatch.svg)no-repeat right;
-    /* background-size: cover; */
-    height: 400px;
-    width: 80%;
-    margin: 0 auto;
+    background: url(/images/eyecatch_1.svg)no-repeat center;
+    background-size: cover;
+    height: 340px;
+    width: 100%;
     text-align: center;
     text-indent: -9999px;
+    margin-bottom: 20px;
 }
 
 .summary {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     font-size: 1.2rem;
     text-align: left;
+    border-top: 2px dotted #0B315E;
+    padding-top: 10px;
 }

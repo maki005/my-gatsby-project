@@ -124,11 +124,13 @@ body {
     color: $primary-color;
     text-align: center;
     font-size: 14px;
+    line-height: 1.5;
 }
 
 .wrap {
     width: 85%;
     margin: 0 auto 100px;
+    padding-top: 8%;
 }
 
 .sub_title {
@@ -136,6 +138,39 @@ body {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+
+/* ------------------------------
+work
+--------------------------------*/
+.wrap_work {
+    background-color: #FAF5EF;
+    margin-top: 8%;
+    padding: 3% 0;
+}
+
+.innerWrap_work {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img_workTop {
+    width: 100%;
+    display: inline-block;
+}
+
+.img_workTop:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.innerWrap_work figure {
+    max-height: 100%;
+    height: 300px;
+}
+
 
 /* ------------------------------
 できること
@@ -149,6 +184,7 @@ body {
 
 .card {
     width: 30%;
+    padding: 5%;
 }
 
 .card h3 {
@@ -161,5 +197,42 @@ body {
     width: 50%;
     margin: 0 auto;
     text-align: left;
-    line-height: 1.5;
+}
+
+.card.ui {
+    background: url(/images/img_bk_blue.svg)no-repeat center;
+    background-size: contain;
+}
+
+.card.web {
+    background: url(/images/img_bk_yellow.svg)no-repeat center;
+    background-size: contain;
+}
+
+.card.engineer {
+    background: url(/images/img_bk_grey.svg)no-repeat center;
+    background-size: contain;
+}
+
+/* ------------------------------
+プロフィール
+--------------------------------*/
+.wrap_profile p {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.tool {
+    background-color: #CED6DF;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.wrap_tool {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
 }
