@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.container {
+    background: url(/images/img_bk_navy.svg)no-repeat left;
+    height: 300px;
+}

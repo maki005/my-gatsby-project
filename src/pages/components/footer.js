@@ -1,9 +1,10 @@
 import React from "react"
+import styles from '../styles/footer.module.css'
 
 export default function Footer() {
     return (
-        <footer>
-            <div className="container">footer</div>
+        <footer className={styles.container}>
+            <div>MAKI ADACHI Portfolio</div>
         </footer>
     )
 }
