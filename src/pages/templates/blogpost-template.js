@@ -1,27 +1,27 @@
 import React from "react"
-import '../styles/style.scss'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import styles from "../styles/post.module.css"
+
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from "@contentful/rich-text-types"
-import useContentfulImage from "../../utils/useContentfulImage"
+// import useContentfulImage from "../utils/useContentfulImage"
 
 
 const options = {
     renderNode: {
         // 画像を表示する
         [BLOCKS.EMBEDDED_ASSET]: node => (
-            <img 
-                fluid={useContentfulImage(node.data.target.fields.file["ja-JP"].url)}
+            <img
+                src={node.data.target.fields.file["ja-JP"].url}
                 alt={
                     node.data.target.fields.description
                     ? node.data.target.fields.description["ja-JP"]
                     : node.data.target.fields.title["ja-JP"]
                 }
+                style={{width:"50%"}}
             />
-
-            
         ),
     },
     // 改行をbrにする
@@ -35,20 +35,20 @@ const options = {
 export default function Work({ data }) {
     return (
         <div>
-            <div>
-                eyecatch
+            <div className={styles.eyecatch}>
                 <figure>
                     {/* アイキャッチがpublishやないとエラー？ */}
                     <Img
                         fluid={data.contentfulBlogPost.eyecatch.fluid}
                         alt={data.contentfulBlogPost.eyecatch.description}
+                        style={{ height: "100%" }}
                     />
                 </figure>
 
             </div>
 
             <article>
-                <h1>{data.contentfulBlogPost.title}</h1>
+                <h1 className={styles.page_title}>{data.contentfulBlogPost.title}</h1>
                 <aside>
                     <ul>
                         <li>{data.contentfulBlogPost.category.category}</li>
