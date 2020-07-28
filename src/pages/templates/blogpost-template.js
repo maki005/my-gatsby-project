@@ -1,16 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-
 import styles from "../styles/post.module.css"
 
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from "@contentful/rich-text-types"
 // import useContentfulImage from "../utils/useContentfulImage"
 
+import Layout from "../components/layout.js"
+
 
 const options = {
     renderNode: {
+        [BLOCKS.HEADING_2]: (node, children) => (
+            <h2 className={styles.sub_title}>
+                {children}
+            </h2>
+        ),
         // 画像を表示する
         [BLOCKS.EMBEDDED_ASSET]: node => (
             <img
@@ -35,6 +41,7 @@ const options = {
 export default function Work({ data }) {
     return (
         <div>
+            <Layout>
             <div className={styles.eyecatch}>
                 <figure>
                     {/* アイキャッチがpublishやないとエラー？ */}
@@ -47,21 +54,24 @@ export default function Work({ data }) {
 
             </div>
 
-            <article>
+            <article className={styles.wrap}>
+                {/* 記事タイトル */}
                 <h1 className={styles.page_title}>{data.contentfulBlogPost.title}</h1>
+                {/* 記事カテゴリー */}
                 <aside>
-                    <ul>
+                    <ul className={styles.category}>
                         <li>{data.contentfulBlogPost.category.category}</li>
                     </ul>
                 </aside>
 
-                <div>
+                <div className={styles.innerWrap_article}>
                     {documentToReactComponents(data.contentfulBlogPost.content.json,
                     options    
                     )}
                 </div>
 
             </article>
+            </Layout>
         </div>
     )
 }
