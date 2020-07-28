@@ -13,10 +13,11 @@ export default function Home({ data }) {
       <SEO />
       <Eyecatch />
 
-      <section className="wrap_work" id="work">
+      <section className="wrap_work">
       <h2 className="sub_title">Work</h2>
       <div className="innerWrap_work">
       {data.allContentfulBlogPost.edges.map(({ node }) => (
+        <div key={node.id}>
           <Link to ={`/work/post/${node.slug}`}>
           <figure className="img_workTop">
               <Img
@@ -26,11 +27,12 @@ export default function Home({ data }) {
               />
           </figure>
           </Link>
+        </div>
       ))}
       </div>
       </section>
 
-      <section className="wrap" id="todo">
+      <section className="wrap">
         <h2 className="sub_title">できること</h2>
         <div className="d_flex">
           <div className="card ui">
@@ -48,8 +50,12 @@ export default function Home({ data }) {
         </div>
       </section>
 
-      <section className="wrap wrap_profile" id="profile">
+      <section className="wrap wrap_profile">
         <h2 className="sub_title">プロフィール</h2>
+        <div>
+          <Link to={`/profile/`}><span className="link_profile">足立 真規</span></Link>
+          <span>1994年生まれ　関西在住</span>
+        </div>
         <p>
           高知大学人文学部卒業。転職活動をするうちにこれからの動向を検討し、IT業界への就職を決め
           未経験で現在の会社に新卒入社。Web UIデザイナーとして自社システムのUIを担当しています。

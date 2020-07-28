@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.eyecatch {
+    background: url(/images/img_bk_navy_top.svg)no-repeat right;
+    height: 220px;
+    color: #222222;
+    font-size: 3rem;
+    padding-top: 10%;
+    box-sizing: border-box;
+}
+
+.wrap_ex {
+    position: relative;
+    padding-top: 8%;
+}
+
+.wrap_list {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.list_ex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #707070;
+    padding: 1rem;
+}
