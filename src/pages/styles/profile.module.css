@@ -14,6 +14,20 @@
     padding-top: 8%;
 }
 
+.wrap_list_point {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.list_point {
+    text-align: left;
+    line-height: 2;
+    font-size: 1rem;
+}
+
 .wrap_list {
     width: 40%;
     margin: 0 auto;
