@@ -130,7 +130,7 @@ body {
 .wrap {
     width: 85%;
     margin: 0 auto 100px;
-    padding-top: 8%;
+    padding-top: 120px;
 }
 
 .sub_title {
@@ -144,7 +144,7 @@ work
 --------------------------------*/
 .wrap_work {
     background-color: #FAF5EF;
-    margin-top: 8%;
+    margin: 120px 0 100px;
     padding: 3% 0;
 }
 
@@ -245,6 +245,59 @@ work
     margin: 20px;
     color: #CCCCCC;
 }
+
+
+
+/* ------------------------------
+レスポンシブ
+--------------------------------*/
+@media (max-width: 1000px) {
+    .wrap {
+        padding-top: 0;
+    }
+
+    .innerWrap_work figure {
+        height: 150px;
+    }
+
+    .card p {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .innerWrap_work {
+        display: inherit;
+    }
+
+    .innerWrap_work figure {
+        height: inherit;
+    }
+
+    .d_flex {
+        display: inherit;
+    }
+
+    .card {
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media (max-width: 400px) {
+    // スマホサイズになると余白ができるので回避
+    .over_hidden {
+        overflow: hidden;
+    }
+
+    .card {
+        width: inherit;
+    }
+}
+
+
+
 
 /* ------------------------------
 凡例

@@ -19,3 +19,14 @@
     padding: 5% 0;
     box-sizing: border-box;
 }
+
+
+/* ------------------------------
+レスポンシブ
+--------------------------------*/
+@media (max-width: 800px) {
+    .container {
+        height: 70%;
+    }
+
+}

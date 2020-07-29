@@ -5,7 +5,7 @@ export default function Eyecatch(){
     return (
         <div>
 
-        <section id="eyecatch">
+        <section>
             <h1 className={styles.eyecatch}>MAKI ADACHI Portfolio</h1>
             <p className={styles.summary}>
                 Web UIデザイナーとして作成してきたものを紹介します。
