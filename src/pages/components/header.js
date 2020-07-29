@@ -13,6 +13,14 @@ export default function Header() {
                     <Link to={`/profile/`}><li>Profile</li></Link>
                 </ul>
             </div>
+            <div className={styles.container_mini}>
+                <input type="checkbox" id="humburger" name="humburger" className={styles.humburger} />
+                <label htmlFor="humburger" className={styles.menu_humburger}>あああ</label>
+                <ul className={styles.list_mini}>
+                    <Link to={`/`}><li>TOP</li></Link>
+                    <Link to={`/profile/`}><li>Profileeee</li></Link>
+                </ul>
+            </div>
         </header>
     )
 }
