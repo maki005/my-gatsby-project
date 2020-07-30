@@ -26,7 +26,7 @@ const options = {
                     ? node.data.target.fields.description["ja-JP"]
                     : node.data.target.fields.title["ja-JP"]
                 }
-                style={{width:"50%"}}
+                className={styles.article_img}
             />
         ),
     },

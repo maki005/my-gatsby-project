@@ -10,19 +10,32 @@
     margin-bottom: 30px;
 }
 
+.innerWrap_article h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #707070;
+}
+
+.article_img {
+    width: 70%;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 80px;
+}
+
 .page_title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 100px auto;
 }
 
 .eyecatch figure {
     max-height: 100%;
-    height: 700px;
 }
 
 .sub_title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    padding-top: 80px;
 }
 
 .category {
@@ -34,4 +47,21 @@
     border-radius: 30px;
     padding: 0.3rem 1.2rem;
     display: inline-block;
+}
+
+
+
+
+/* ------------------------------
+レスポンシブ
+--------------------------------*/
+@media (max-width: 550px) {
+    .page_title {
+        font-size: 1.7rem;
+        margin: 40px auto;
+    }
+
+    .article_img  {
+        width: 100%;
+    }
 }
