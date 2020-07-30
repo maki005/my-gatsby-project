@@ -30,6 +30,13 @@
     text-align: left;
     line-height: 2;
     font-size: 1rem;
+    list-style: none;
+}
+
+.list_point li::before {
+    content: "・";
+    display: inline-block;
+    font-weight: bold;
 }
 
 .wrap_list {
@@ -58,6 +65,10 @@
         background-position: top;
         height: 20vh;
     }
+
+    .wrap_list_point {
+        width: 85%;
+    }
 }
 
 @media (max-width: 550px) {
@@ -67,5 +78,17 @@
 
     .eyecatch::before {
         display: none;
+    }
+
+    .wrap_list_point {
+        display: inherit;
+    }
+
+    .list_point {
+        margin-bottom: 30px;
+    }
+
+    .wrap_list {
+        width: 70%;
     }
 }
