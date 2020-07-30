@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 .eyecatch {
     background: url(/images/eyecatch_1.svg)no-repeat top;
     background-size: contain;
@@ -34,5 +32,9 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 10%;
+    }
+
+    .summary {
+        width: 80%;
     }
 }
