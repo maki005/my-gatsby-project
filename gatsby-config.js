@@ -10,8 +10,8 @@ require('dotenv').config({path:`./.env.${env}`});
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `TEST`,
-    description: `ポートフォリオサイト`,
+    title: `MAKI ADACHI Portfolio`,
+    description: `業務内外で作成したものを集めています`,
     lang: `ja`,
   },
   plugins: [
