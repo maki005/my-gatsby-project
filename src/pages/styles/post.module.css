@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
 .wrap {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
 .innerWrap_article p {
     text-align: left;
+    line-height: 1.7;
+}
+
+.innerWrap_article ul {
     margin-bottom: 30px;
 }
 
@@ -18,9 +22,9 @@
 }
 
 .article_img {
-    width: 70%;
+    width: 100%;
     border: 1px solid #CCCCCC;
-    margin-bottom: 80px;
+    margin: 20px 0 80px;
 }
 
 .page_title {
