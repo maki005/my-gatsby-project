@@ -10,11 +10,11 @@ export default function Profile({ date }) {
             <Layout>
                 <h1 className={styles.eyecatch}>Profile</h1>
                 <div className="wrap wrap_profile">
-                    <p><span className="bold f_large mR_1">足立&nbsp;&nbsp;真規</span>1994年生まれ&nbsp;関西在住</p>
+                    <p><span className="bold f_large mR_1">足立&nbsp;&nbsp;真規</span>1994年生まれ&nbsp;神戸在住</p>
                     <p>
                         高知大学人文学部国際社会コミュニケーション学科卒業後、未経験でキー・ポイント株式会社へ入社。
-                        自社プロダクト（BtoB系SaaS）のUI作成・改善や紹介HPの作成、自社サイトの運営に携わりながら、受託での単発開発システムのUIも担当するなど。
-                        デザインだけでなく、コーディングやPJによってはディレクションなどをすることも。好きなことはバスケと絵を描くこと。
+                        自社プロダクト（BtoB系SaaS）のUI作成・改善や紹介HPの作成、自社サイトの運営に携わりながら、受託での単発開発システムのUIも担当しています。
+                        デザインだけでなく、コーディングやPJによってはディレクションなどをすることもあります。好きなことはバスケと絵を描くこと。モノ作りも好きです。
                     </p>
                     <div className={styles.wrap_list_point}>
                         <div>
@@ -51,7 +51,7 @@ export default function Profile({ date }) {
                         </li>
                         <li className={styles.list_ex}>
                             <div>2017年4月</div>
-                            <div>現職入社〜現在</div>
+                            <div>キー・ポイント株式会社入社〜現在</div>
                         </li>
                     </ul>
                 </div>            

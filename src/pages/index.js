@@ -37,15 +37,15 @@ export default function Home({ data }) {
         <div className="d_flex">
           <div className="card ui">
             <h3>UIデザイン</h3>
-            <p>BtoB自社製品のデザインを担当しています。Adobe XDでのモックからHTML/CSSまでを担当</p>
+            <p>自社製品のデザインを担当しています。Adobe XDでのモックからHTML/CSSまでを担当</p>
           </div>
           <div className="card web">
             <h3>Webデザイン</h3>
-            <p>自社システムの紹介サイトを管理WordPressで運営。LPや自社採用ページなどを作成</p>
+            <p>自社サイト及び製品紹介サイトをWordPressで管理。LPや自社採用ページなども作成</p>
           </div>
           <div className="card engineer">
             <h3>エンジニアと</h3>
-            <p>エンジニアと共同でプロジェクトをすすめる。ローカル環境構築やGithubでのソース管理なども業務内での経験。</p>
+            <p>エンジニアとプロジェクトを進める。ローカル環境構築やGithubでのソース管理なども業務内での経験。</p>
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default function Home({ data }) {
         <p>
           高知大学人文学部卒業。転職活動をするうちにこれからの動向を検討し、IT業界への就職を決め
           未経験で現在の会社に新卒入社。Web UIデザイナーとして自社システムのUIを担当しています。
-          エンジニアと共同で働きながら字面でプログラムやネットワーク関連のことも掴んで行きました。
+          エンジニアと共同で働きながらプログラムやネットワーク関連についても学びながら働いています。
           
           <br />
           知らないことを知れる、できないことができるということに喜びを感じる人間です。
@@ -70,10 +70,9 @@ export default function Home({ data }) {
           <span className="tool">illustrater</span>
           <span className="tool">HTML</span>
           <span className="tool">CSS</span>
-          <span className="tool">javascript</span>
+          <span className="tool">JavaScript</span>
           <span className="tool">GitHub</span>
           <span className="tool">WordPress</span>
-          <span className="tool">Slack</span>
         </div>
       </section>
 
