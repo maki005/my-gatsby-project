@@ -18,7 +18,7 @@ export default function Header() {
                 <label htmlFor="humburger" className={styles.menu_humburger}>あああ</label>
                 <ul className={styles.list_mini}>
                     <Link to={`/`}><li>TOP</li></Link>
-                    <Link to={`/profile/`}><li>Profileeee</li></Link>
+                    <Link to={`/profile/`}><li>Profile</li></Link>
                 </ul>
             </div>
         </header>
