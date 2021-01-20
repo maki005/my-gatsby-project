@@ -5,53 +5,28 @@
     color: #222222;
 }
 
-.eyecatch::before {
-    content: "";
-    display: inline-block;
-    background: url(/images/img_bk_navy_top.svg)no-repeat right;
-    height: 30vh;
-    width: 100%;
-}
-
-.wrap_ex {
-    position: relative;
-    padding-top: 8%;
-}
-
 .wrap_list_point {
+    padding: 3rem;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.inner_list_point {
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 80px;
 }
 
-.list_point {
-    text-align: left;
-    line-height: 2;
-    font-size: 1rem;
-    list-style: none;
-}
-
-.list_point li::before {
-    content: "・";
-    display: inline-block;
-    font-weight: bold;
-}
-
-.wrap_list {
+.wrap_point_img {
     width: 40%;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
-.list_ex {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px dotted #707070;
-    padding: 1rem;
+.title_point {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
 }
-
-
 
 /* ------------------------------
 レスポンシブ
@@ -60,15 +35,6 @@
     .eyecatch {
         margin-bottom: 30px;
     }
-    
-    .eyecatch::before {
-        background-position: top;
-        height: 20vh;
-    }
-
-    .wrap_list_point {
-        width: 85%;
-    }
 }
 
 @media (max-width: 550px) {
@@ -76,19 +42,7 @@
         margin-top: 80px;
     }
 
-    .eyecatch::before {
-        display: none;
-    }
-
     .wrap_list_point {
         display: inherit;
-    }
-
-    .list_point {
-        margin-bottom: 30px;
-    }
-
-    .wrap_list {
-        width: 70%;
     }
 }

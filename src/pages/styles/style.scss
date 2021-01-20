@@ -115,6 +115,7 @@ input, select {
 基本 
 --------------------------------*/
 $font-stack: Noto Sans JP, sans-serif;
+$font-title: Noto Sans Display, sans-serif;
 $primary-color: #222222;
 $main-blue: #0B315E;
 
@@ -137,6 +138,20 @@ body {
     color: $main-blue;
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+.page_title {
+    font-family: $font-title;
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+
+.page_title_under {
+    width: 100px;
+    height: 15px;
+    margin: 0 auto;
+    background: url(/images/page_title_under.svg)no-repeat center;
+    background-size: contain;
 }
 
 /* ------------------------------
