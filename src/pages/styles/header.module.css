@@ -1,15 +1,19 @@
 @charset "UTF-8";
 
+header {
+    text-align: right;
+    margin-top: 50px;
+}
+
 .container {
+    display: inline-block;
     border: 1px solid #FFFFFF;
     border-radius: 30px;
     padding: 10px 30px;
     background-color: #FFFFFF;
-    position: absolute;
-    right: 5%;
-    top: 5%;
     box-shadow: 2px 5px 10px rgba(0,0,1,0.1);
     z-index: 9999;
+    margin: 0 2rem auto;
 }
 
 .container_mini,

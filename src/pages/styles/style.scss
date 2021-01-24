@@ -131,7 +131,7 @@ body {
 .wrap {
     width: 85%;
     margin: 0 auto 100px;
-    padding-top: 120px;
+    padding: 120px 0;
 }
 
 .sub_title {
@@ -144,6 +144,7 @@ body {
     font-family: $font-title;
     font-weight: bold;
     font-size: 3.2rem;
+    margin-top: 100px;
 }
 
 .page_title_under {

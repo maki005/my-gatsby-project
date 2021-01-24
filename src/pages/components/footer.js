@@ -4,8 +4,8 @@ import styles from '../styles/footer.module.css'
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className={styles.copyright}>MAKI ADACHI Portfolio | 2020</div>
-            <span className={styles.container}></span>
+            <div className={styles.copyright}>maki adachi Portfolio Site</div>
+            <div className={styles.container}></div>
         </footer>
     )
 }
