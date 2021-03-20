@@ -12,10 +12,10 @@ import Layout from "../components/layout.js"
 
 const options = {
     renderNode: {
-        [BLOCKS.HEADING_2]: (node, children) => (
-            <h2 className={styles.sub_title}>
+        [BLOCKS.HEADING_3]: (node, children) => (
+            <h3 className={styles.test_title}>
                 {children}
-            </h2>
+            </h3>
         ),
         // 画像を表示する
         [BLOCKS.EMBEDDED_ASSET]: node => (
@@ -42,35 +42,37 @@ export default function Work({ data }) {
     return (
         <div>
             <Layout>
-            <div className={styles.eyecatch}>
-                <figure>
-                    {/* アイキャッチがpublishやないとエラー？ */}
-                    <Img
-                        fluid={data.contentfulBlogPost.eyecatch.fluid}
-                        alt={data.contentfulBlogPost.eyecatch.description}
-                        style={{ height: "100%" }}
-                    />
-                </figure>
+                <h1 className="page_title">Work</h1>
+                <div class="page_title_under"></div>
+                <div className="wrap">
 
-            </div>
+                    <article>
+                        {/* アイキャッチ */}
+                        <div className={styles.eyecatch}>
+                            <figure>
+                                {/* アイキャッチがpublishやないとエラー？ */}
+                                <Img
+                                    fluid={data.contentfulBlogPost.eyecatch.fluid}
+                                    alt={data.contentfulBlogPost.eyecatch.description}
+                                    style={{ height: "100%" }}
+                                />
+                            </figure>
+                        </div>
 
-            <article className={styles.wrap}>
-                {/* 記事タイトル */}
-                <h1 className={styles.page_title}>{data.contentfulBlogPost.title}</h1>
-                {/* 記事カテゴリー */}
-                <aside>
-                    <ul className={styles.category}>
-                        <li>{data.contentfulBlogPost.category.category}</li>
-                    </ul>
-                </aside>
+                        {/* 記事タイトル */}
+                        <h2 className={styles.post_title}>{data.contentfulBlogPost.title}</h2>
 
-                <div className={styles.innerWrap_article}>
-                    {documentToReactComponents(data.contentfulBlogPost.content.json,
-                    options    
-                    )}
+                        {/* 記事本文 */}
+                        <div className={styles.innerWrap_article}>
+                            {documentToReactComponents(data.contentfulBlogPost.content.json,
+                            options
+                            )}
+                        </div>
+
+                    </article>
+
                 </div>
-
-            </article>
+            
             </Layout>
         </div>
     )

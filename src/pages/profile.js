@@ -10,7 +10,7 @@ export default function Profile({ data }) {
     return(
         <div>
             <Layout>
-                <h1 className="page_title">about</h1>
+                <h1 className="page_title">About</h1>
                 <div className="page_title_under"></div>
                 <div className="wrap wrap_profile">
                     <p><span className="bold f_middle mR_1">足立&nbsp;&nbsp;真規</span>Maki&nbsp;ADACHI</p>

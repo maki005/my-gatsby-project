@@ -1,45 +1,16 @@
 @charset "UTF-8";
 
-.wrap {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.innerWrap_article p {
+article {
     text-align: left;
-    line-height: 1.7;
-}
-
-.innerWrap_article ul {
-    margin-bottom: 30px;
-}
-
-.innerWrap_article h3 {
-    text-align: left;
-    margin: 20px 0 10px;
-    font-size: 1.2rem;
-    color: #707070;
 }
 
 .article_img {
     width: 100%;
-    border: 1px solid #CCCCCC;
     margin: 20px 0 80px;
-}
-
-.page_title {
-    font-size: 2.4rem;
-    margin: 100px auto;
 }
 
 .eyecatch figure {
     max-height: 100%;
-}
-
-.sub_title {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    padding-top: 80px;
 }
 
 .category {
@@ -53,6 +24,25 @@
     display: inline-block;
 }
 
+/* -------記事内------- */
+.post_title {
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+}
+
+.innerWrap_article h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.innerWrap_article > p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.innerWrap_article ul {
+    margin-bottom: 30px;
+}
 
 
 
