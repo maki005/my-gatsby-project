@@ -167,7 +167,7 @@ work
 .innerWrap_work {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 40px 20px;
     width: 80%;
     margin: 0 auto;
 }
@@ -177,14 +177,21 @@ work
     display: inline-block;
 }
 
-.img_workTop:hover {
-    opacity: 0.5;
-    transition: 0.2s;
-}
 
 .innerWrap_work figure {
     max-height: 100%;
     height: 300px;
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.innerWrap_work figure:hover {
+    box-shadow: none;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.wrap_post {
+    text-align: left;
 }
 
 

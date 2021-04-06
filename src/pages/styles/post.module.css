@@ -32,18 +32,26 @@ article {
 
 .innerWrap_article h3 {
     font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.innerWrap_article > p {
-    margin-bottom: 30px;
-    line-height: 1.7;
+    margin: 50px 0 10px;
 }
 
 .innerWrap_article ul {
-    margin-bottom: 30px;
+    margin: 10px 0 20px;
 }
 
+.innerWrap_article li {
+    list-style: none;
+}
+
+.innerWrap_article li > p {
+    display: inline-block;
+}
+
+.innerWrap_article li::before {
+    content: "・";
+    display: inline-block;
+    color: #FF057C;
+}
 
 
 /* ------------------------------
