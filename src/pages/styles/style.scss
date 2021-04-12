@@ -156,12 +156,10 @@ body {
 }
 
 /* ------------------------------
-work
+work_一覧
 --------------------------------*/
 .wrap_work {
-    background-color: #FAF5EF;
-    margin: 120px 0 100px;
-    padding: 3% 0;
+    padding-top: 70px;
 }
 
 .innerWrap_work {
@@ -176,7 +174,6 @@ work
     width: 100%;
     display: inline-block;
 }
-
 
 .innerWrap_work figure {
     max-height: 100%;
@@ -240,13 +237,13 @@ work
 /* ------------------------------
 プロフィール
 --------------------------------*/
-.wrap_profile p {
-    width: 85%;
-    margin: 0 auto;
-    font-size: 1rem;
-    text-align: left;
-    padding-top: 20px;
-}
+// .wrap_profile p {
+//     width: 85%;
+//     margin: 0 auto;
+//     font-size: 1rem;
+//     text-align: left;
+//     padding-top: 20px;
+// }
 
 .tool {
     background-color: #CED6DF;

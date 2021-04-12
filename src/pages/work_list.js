@@ -12,7 +12,7 @@ export default function Work_list({ data }) {
             <Layout>
                 <h1 className="page_title">Work</h1>
                 <div className="page_title_under"></div>
-                <div className="">
+                <div className="wrap_work">
 
                     <section>
                     <div className="innerWrap_work">

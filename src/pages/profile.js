@@ -12,17 +12,18 @@ export default function Profile({ data }) {
             <Layout>
                 <h1 className="page_title">About</h1>
                 <div className="page_title_under"></div>
-                <div className="wrap wrap_profile">
-                    <p><span className="bold f_middle mR_1">足立&nbsp;&nbsp;真規</span>Maki&nbsp;ADACHI</p>
+                <div className={styles.wrap}>
+                    <h2><span className="bold f_middle mR_1">足立&nbsp;&nbsp;真規</span>Maki&nbsp;ADACHI</h2>
                     <p>
                         1994年生まれ。高知大学人文学部国際社会コミュニケーション学科卒業後、キー・ポイント株式会社へ新卒入社。
-                        自社プロダクト（BtoB系SaaS）のUI作成・改善や紹介HPの作成、自社サイトの運営に携わりながら、受託での単発開発システムのUIも担当しています。
-                        デザインだけでなく、コーディングやPJによってはディレクションなどをすることもあります。
-                    </p>
-                    <p>
+                        自社プロダクト（BtoB系SaaS）のUI作成・改善やHPの作成、WordPressで構成された自社サイトの運営に携わりながら、受託でのシステム開発のUIも担当しています。
+                        また、デザインだけでなくコーディングやPJによってはディレクションなどをすることもあります。
+                        <br />
                         新しいことを知ることに楽しみを感じる人間です。
-                        運動、読書、旅行、写真、料理、絵など多趣味。一生なにかものを作って生きていきたいと思っています。どちらかというと0→1が得意です。
+                        運動、読書、旅行、写真、料理、絵など多趣味で、一生ものを作ることに関わりながら日々学んで生きていくことが目標です。
                     </p>
+                </div>
+                <div className={styles.outer_list_point}>
                     <div className={styles.wrap_list_point}>
                         <h2 className={styles.title_point}>できること/してきたこと</h2>
                         <div className={styles.inner_list_point}>
@@ -50,6 +51,7 @@ export default function Profile({ data }) {
                         </div>
                     </div>
                 </div>
+                
           
 
             </Layout>

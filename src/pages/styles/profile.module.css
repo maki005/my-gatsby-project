@@ -1,8 +1,14 @@
 @charset "UTF-8";
 
-.eyecatch {
-    font-size: 3rem;
-    color: #222222;
+.wrap {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.outer_list_point {
+    width: 80%;
+    margin: 80px auto 80px;
 }
 
 .wrap_list_point {
@@ -17,10 +23,18 @@
     justify-content: space-between;
 }
 
-.wrap_point_img {
-    width: 40%;
+.inner_list_point p {
+    width: 85%;
     margin: 0 auto;
-    padding-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.wrap_point_img {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .title_point {
