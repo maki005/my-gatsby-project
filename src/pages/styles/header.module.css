@@ -1,60 +1,19 @@
 @charset "UTF-8";
 
 header {
-    text-align: right;
-    margin-top: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px
 }
 
 .container {
     display: inline-block;
     border: 1px solid #FFFFFF;
-    border-radius: 30px;
-    padding: 10px 30px;
+    border-radius: 40px;
+    padding: 18px 30px;
     background-color: #FFFFFF;
     box-shadow: 2px 5px 10px rgba(0,0,1,0.1);
     z-index: 9999;
-    margin: 0 2rem auto;
-}
-
-.container_mini,
-input.humburger,
-.list_mini {
-    display: none;
-}
-
-input.humburger:checked ~ .list_mini {
-    display: block;
-    background-color: #FFFFFF;
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    padding: 30px 0;
-}
-
-.list_mini li {
-    color: #222222;
-    font-weight: bold;
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: 1.2rem;
-}
-
-.menu_humburger {
-    background: url(/images/icon_humburger.svg)no-repeat center;
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    position: absolute;
-    top: 3%;
-    right: 5%;
-    z-index: 10;
-    text-indent: -9999px;
-}
-
-input.humburger:checked ~ .menu_humburger {
-    background: url(/images/icon_close.svg)no-repeat center;
 }
 
 .list li {
@@ -75,11 +34,17 @@ input.humburger:checked ~ .menu_humburger {
 レスポンシブ
 --------------------------------*/
 @media (max-width: 550px) {
-    .container {
-        display: none;
+    header {
+        position: relative;
+        top: 20px;
+        right: 0;
     }
 
-    .container_mini {
-        display: block;
+    .container {
+        padding: 5px;
+    }
+
+    .list li {
+        font-size: 0.8rem;
     }
 }

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.card {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.card_img {
+    margin-right: 40px;
+}
+
+.card:nth-of-type(2) {
+    justify-content: flex-end;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Noto Sans Display, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.title .number {
+    color: #37c7a6;
+}
+
+.summary {
+    width: 380px;
+    color: #4D4B4B;
+}
+
+
+
+
+/* ------------------------------
+レスポンシブ
+--------------------------------*/
+@media (max-width: 800px) {
+    .card {
+        display: inherit;
+    }
+
+    .summary {
+        width: inherit;
+    }
+}

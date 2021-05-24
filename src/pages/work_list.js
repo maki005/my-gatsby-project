@@ -11,29 +11,25 @@ export default function Work_list({ data }) {
         <div>
             <Layout>
                 <h1 className="page_title">Work</h1>
-                <div className="page_title_under"></div>
                 <div className="wrap_work">
-
-                    <section>
+                  <section>
                     <div className="innerWrap_work">
-                        {data.allContentfulBlogPost.edges.map(({ node }) => (
-                            <div key={node.id} className="wrap_post">
-                            <Link to ={`/work/post/${node.slug}`}>
-                            <figure className="img_workTop">
-                                <Img
-                                    fluid={node.eyecatch.fluid}
-                                    alt="画像説明"
-                                    style={{ height: "100%" }}
-                                />
-                            </figure>
-                            </Link>
-                            <h3>{node.title}</h3>
-                            </div>
-                        ))}
-                        </div>
-                    </section>
-
-
+                      {data.allContentfulBlogPost.edges.map(({ node }) => (
+                          <div key={node.id} className="wrap_post">
+                          <Link to ={`/work/post/${node.slug}`}>
+                          <figure className="img_workTop">
+                              <Img
+                                  fluid={node.eyecatch.fluid}
+                                  alt="画像説明"
+                                  style={{ height: "100%" }}
+                              />
+                          </figure>
+                          </Link>
+                          <h3>{node.title}</h3>
+                          </div>
+                      ))}
+                    </div>
+                  </section>
                 </div>
             </Layout>
         </div>

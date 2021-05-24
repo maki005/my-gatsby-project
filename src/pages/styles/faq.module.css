@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.faq_wrap_small {
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.text_question {
+    color: #45BFA3;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.text_answer {
+    display: flex;
+}
+
+.test {
+    margin-right: 20px;
+}
+
+.label {
+    margin-right: 20px;
+}
+
+
+/* ------------------------------
+レスポンシブ
+--------------------------------*/
+@media (max-width: 800px) {
+    .faq_wrap_small {
+        width: 80%;
+    }
+}

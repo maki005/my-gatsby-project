@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="254.343" height="202.365" viewBox="0 0 254.343 202.365">
+  <g id="グループ_11" data-name="グループ 11" transform="translate(-1003.595 -564.526)">
+    <g id="グループ_4" data-name="グループ 4">
+      <rect id="長方形_14" data-name="長方形 14" width="102.304" height="69.929" rx="1.863" transform="matrix(0.292, -0.956, 0.956, 0.292, 1074.309, 671.036)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <rect id="長方形_15" data-name="長方形 15" width="22.015" height="59.57" rx="2.005" transform="matrix(0.292, -0.956, 0.956, 0.292, 1099.684, 605.668)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="線_6" data-name="線 6" x2="57.282" y2="17.491" transform="translate(1097.513 612.776)" fill="none" stroke="#ebd559" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="線_7" data-name="線 7" x2="57.282" y2="17.491" transform="translate(1096.001 617.73)" fill="none" stroke="#ebd559" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="パス_63" data-name="パス 63" d="M1140.23,675.648a3.5,3.5,0,0,1-1.028-.154l-25.223-7.7a3.534,3.534,0,0,1-2.344-4.407l7.7-25.223a3.53,3.53,0,0,1,4.407-2.345l25.222,7.7a3.528,3.528,0,0,1,2.346,4.406l-7.7,25.222A3.537,3.537,0,0,1,1140.23,675.648Zm-17.519-36.984a.534.534,0,0,0-.506.375l-7.7,25.223a.532.532,0,0,0,.352.662l25.222,7.7a.532.532,0,0,0,.662-.353l7.7-25.222a.529.529,0,0,0-.352-.661l-25.223-7.7A.523.523,0,0,0,1122.711,638.664Z" fill="#45bfa3"/>
+      <line id="線_8" data-name="線 8" x2="22.294" y2="6.807" transform="translate(1092.309 629.82)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4.658"/>
+      <line id="線_9" data-name="線 9" x2="24.771" y2="7.563" transform="translate(1089.851 637.87)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="線_10" data-name="線 10" x2="24.771" y2="7.563" transform="translate(1087.96 644.063)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="線_11" data-name="線 11" x2="24.771" y2="7.563" transform="translate(1086.069 650.256)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="線_12" data-name="線 12" x2="24.771" y2="7.563" transform="translate(1084.178 656.448)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+    <g id="グループ_5" data-name="グループ 5">
+      <rect id="長方形_17" data-name="長方形 17" width="80.494" height="111.551" rx="3.648" transform="translate(1005.435 610.198) rotate(-15.19)" fill="#fff" stroke="#000" stroke-miterlimit="9.999" stroke-width="3"/>
+      <rect id="長方形_18" data-name="長方形 18" width="64.015" height="64.015" rx="3.648" transform="translate(1015.381 615.379) rotate(-15.19)" fill="#fff" stroke="#000" stroke-miterlimit="9.999" stroke-width="3"/>
+      <line id="線_13" data-name="線 13" y1="16.778" x2="61.782" transform="translate(1034.816 670.17)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="線_14" data-name="線 14" y1="16.778" x2="61.782" transform="translate(1036.643 676.898)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="線_15" data-name="線 15" y1="16.778" x2="61.782" transform="translate(1038.47 683.627)" fill="none" stroke="#ebd559" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+    <g id="グループ_6" data-name="グループ 6">
+      <path id="パス_9" data-name="パス 9" d="M1159.628,719.979c-29.353-.067-51.114,8.072-50.687,19.352.085,4,2.921,7.725,7.858,10.778-3.247,5.034-6.763,10.123-10.689,15.282,6.931-3.819,13.515-7.511,19.9-11.126,8.8,2.93,20.6,4.61,33.609,4.617,28.817.089,50.549-8.26,50.66-19.555C1210.709,728.028,1188.982,719.891,1159.628,719.979Z" fill="#fff"/>
+      <path id="パス_64" data-name="パス 64" d="M1106.111,766.891a1.5,1.5,0,0,1-1.194-2.409c3.366-4.423,6.584-8.995,9.81-13.936-4.687-3.241-7.2-7.086-7.286-11.183a11.391,11.391,0,0,1,3.6-8.437c7.457-7.728,26.043-12.529,48.582-12.447h.467c22.271,0,40.663,4.744,48.071,12.416a11.427,11.427,0,0,1,3.613,8.49c-.119,12.178-21.833,21-51.694,21h-.47c-12.6-.007-24.443-1.6-33.441-4.486-6.882,3.894-13.214,7.433-19.339,10.808A1.493,1.493,0,0,1,1106.111,766.891Zm53.174-45.412c-21.248,0-39.311,4.514-46.082,11.53a8.533,8.533,0,0,0-2.763,6.265c.092,4.308,3.938,7.574,7.148,9.559a1.5,1.5,0,0,1,.472,2.089c-2.215,3.432-4.419,6.684-6.664,9.828,4.427-2.463,9.012-5.037,13.875-7.791a1.49,1.49,0,0,1,1.212-.117c8.776,2.921,20.544,4.533,33.137,4.54h.436c27.26,0,48.623-7.907,48.723-18.07a8.579,8.579,0,0,0-2.772-6.335c-6.759-7-24.756-11.5-45.927-11.5-.152,0-.33,0-.455,0Z" fill="#45bfa3"/>
+    </g>
+    <g id="グループ_7" data-name="グループ 7">
+      <path id="パス_11" data-name="パス 11" d="M1194.288,667.972c36.049-.1,62.559,9.937,62.144,23.8-.065,4.918-3.473,9.483-9.482,13.221,2.569,5.007,5.382,10.048,8.517,15.129-6.821-3.429-13.382-6.768-19.774-10.046-10.785,3.579-25.333,5.622-41.406,5.626-35.665.1-62.175-10.069-62.143-23.93C1131.729,677.909,1158.237,667.874,1194.288,667.972Z" fill="#fff"/>
+      <path id="パス_12" data-name="パス 12" d="M1194.288,667.972c36.049-.1,62.559,9.937,62.144,23.8-.065,4.918-3.473,9.483-9.482,13.221,2.569,5.007,5.382,10.048,8.517,15.129-6.821-3.429-13.382-6.768-19.774-10.046-10.785,3.579-25.333,5.622-41.406,5.626-35.665.1-62.175-10.069-62.143-23.93C1131.729,677.909,1158.237,667.874,1194.288,667.972Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <path id="パス_65" data-name="パス 65" d="M1187.419,654.488a4.873,4.873,0,0,0-.8-.109l-25.268-1.311-.35,6.727,18.662.968-59.813,45.385a1.393,1.393,0,0,1-2.233-1.077l-.591-26.687a1.391,1.391,0,0,0-2.294-1.029l-70.147,59.724a1.388,1.388,0,0,0-.489,1.091l.211,9.526a1.392,1.392,0,0,0,2.3,1.028l60.533-51.662a1.392,1.392,0,0,1,2.3,1.028l.587,26.492a1.392,1.392,0,0,0,2.291,1.031l70.481-59.679-3.965,17.432,6.568,1.494,5.611-24.67A4.77,4.77,0,0,0,1187.419,654.488Z"/>
+    <g id="グループ_9" data-name="グループ 9">
+      <line id="線_16" data-name="線 16" x1="2.78" y2="7.646" transform="translate(1170.401 564.868)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="線_17" data-name="線 17" x1="5.56" y2="3.475" transform="translate(1179.437 575.989)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="線_18" data-name="線 18" x1="10.485" y2="1.463" transform="translate(1182.535 587.768)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="グループ_10" data-name="グループ 10">
+      <line id="線_19" data-name="線 19" x2="5.56" y2="3.475" transform="translate(1092.208 725.078)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="線_20" data-name="線 20" y1="0.711" x2="6.369" transform="translate(1088.676 738.624)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="線_21" data-name="線 21" y1="4.17" x2="5.56" transform="translate(1092.208 746.625)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <path id="パス_15" data-name="パス 15" d="M1228.851,639.4l-8.263,9.526,6.152,11.008,8.263-9.526Z" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="パス_16" data-name="パス 16" d="M1013.009,739.663l8.263,9.526L1015.12,760.2l-8.263-9.526Z" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

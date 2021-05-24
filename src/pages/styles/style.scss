@@ -116,28 +116,40 @@ input, select {
 --------------------------------*/
 $font-stack: Noto Sans JP, sans-serif;
 $font-title: Noto Sans Display, sans-serif;
-$primary-color: #222222;
+$black: #222222;
 $main-blue: #0B315E;
+$gray: #4D4B4B;
+$green: #37c7a6;
 
 
 body {
     font-family: $font-stack;
-    color: $primary-color;
+    color: $black;
     text-align: center;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.wrap {
-    width: 60%;
-    margin: 0 auto 100px;
-    padding: 50px 0;
+.c-wrap_large {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
 }
 
-.sub_title {
-    color: $main-blue;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+.c-wrap_small {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section_title {
+    color: $black;
+    font-size: 1.8rem;
+    letter-spacing: 0.2em;
+    font-family: Noto Sans Display, sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
 }
 
 .page_title {
@@ -147,25 +159,25 @@ body {
     margin-top: 30px;
 }
 
-.page_title_under {
-    width: 100px;
-    height: 15px;
-    margin: 0 auto;
-    background: url(/images/page_title_under.svg)no-repeat center;
-    background-size: contain;
+.c-text_normal {
+    color: $gray;
+    text-align: left;
 }
+
+.c-back_gray { background-color: #F8F8F8; }
+
 
 /* ------------------------------
 work_一覧
 --------------------------------*/
-.wrap_work {
-    padding-top: 70px;
+.work {
+    padding: 120px 0;
 }
 
 .innerWrap_work {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    gap: 40px 20px;
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    gap: 50px 20px;
     width: 80%;
     margin: 0 auto;
 }
@@ -177,8 +189,8 @@ work_一覧
 
 .innerWrap_work figure {
     max-height: 100%;
-    height: 300px;
-    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.2);
+    height: 240px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .innerWrap_work figure:hover {
@@ -189,6 +201,73 @@ work_一覧
 
 .wrap_post {
     text-align: left;
+}
+
+
+/* ------------------------------
+attention
+--------------------------------*/
+.wrap_attention {
+    position: relative;
+}
+
+.wrap_attention::after {
+    content: "";
+    display: block;
+    height: 200px;
+}
+
+.attention {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 40px 100px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    position: absolute;
+    top: -50px;
+}
+
+.attention_title {
+    font-size: 1.4rem;
+}
+
+.attention_title::after {
+    content: "";
+    display: block;
+    width: 10%;
+    border: 3px solid $green;
+    border-radius: 10px;
+    margin: 10px auto 20px;
+}
+
+
+/* ------------------------------
+プロフィール
+--------------------------------*/
+.wrap_profile {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.wrap_profile img {
+    width: 40%;
+}
+
+.profile_title {
+    margin-bottom: 15px;
+}
+
+span.name_e {
+    color: $green;
+    letter-spacing: initial;
+}
+
+.wrap_profile .c-text_normal {
+    width: 80%;
 }
 
 
@@ -234,16 +313,13 @@ work_一覧
     background-size: contain;
 }
 
-/* ------------------------------
-プロフィール
---------------------------------*/
 
 /* ------------------------------
 404
 --------------------------------*/
 .title_404 {
     font-size: 10rem;
-    color: #0B315E;
+    color: $green;
     font-weight: bold;
     margin-top: 10%;
 }
@@ -252,11 +328,7 @@ work_一覧
 /* ------------------------------
 レスポンシブ
 --------------------------------*/
-@media (max-width: 1000px) {
-    .wrap {
-        padding-top: 0;
-    }
-
+@media (max-width: 1024px) {
     .innerWrap_work figure {
         height: 150px;
     }
@@ -264,9 +336,35 @@ work_一覧
     .card p {
         width: 80%;
     }
+
+    // profile
+    .wrap_profile {
+        display: inherit;
+    }
+
+    .wrap_profile img {
+        width: 60%;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .wrap_profile .c-text_normal {
+        width: inherit;
+    }
+
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+    // attention
+    .attention {
+        padding: 30px
+    }
+
+    .c-wrap_small {
+        width: 80%;
+    }
+
+    // 事例一覧
     .innerWrap_work {
         display: inherit;
     }
@@ -275,14 +373,12 @@ work_一覧
         height: inherit;
     }
 
-    .d_flex {
-        display: inherit;
+    .wrap_post {
+        margin-bottom: 40px;
     }
 
-    .card {
-        margin: 0 auto;
-        margin-bottom: 30px;
-
+    .d_flex {
+        display: inherit;
     }
 }
 
@@ -294,6 +390,20 @@ work_一覧
 
     .card {
         width: inherit;
+    }
+
+    // attention
+    .attention {
+        top: -30px;
+    }
+
+    .wrap_attention::after {
+        height: 250px;
+    }
+
+    // profile
+    span.name_e {
+        display: block;
     }
 }
 
@@ -309,3 +419,5 @@ work_一覧
 
 .mB_1{ margin-bottom: 1rem; }
 .mR_1{ margin-right: 1rem; }
+
+.ll { text-align: left; }

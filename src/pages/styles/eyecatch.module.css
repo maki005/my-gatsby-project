@@ -1,40 +1,46 @@
 @charset "UTF-8";
 .eyecatch {
-    background: url(/images/eyecatch_1.svg)no-repeat top;
-    background-size: contain;
-    height: 40vh;
+    background: url(/images/main_back.svg)no-repeat right;
     text-align: center;
-    text-indent: -9999px;
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
-.summary {
-    width: 50%;
+.inner_eyecatch {
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
-    font-size: 1.2rem;
+}
+
+.wrap_title {
     text-align: left;
-    border-top: 2px dotted #0B315E;
-    padding-top: 10px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 4.2rem;
+    font-family: Noto Sans Display, sans-serif;
+    line-height: 1.2;
 }
 
 /* ------------------------------
 レスポンシブ
 --------------------------------*/
-@media (max-width: 1024px) {
-    .eyecatch {
-        height: 20vh;
-    }
-}
-
 @media (max-width: 550px) {
     .eyecatch {
-        background: url(/images/eyecatch_small.svg)no-repeat center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 10%;
+        background: url(/images/main_back_s.svg)no-repeat bottom;
+        margin-top: 0;
     }
 
-    .summary {
-        width: 80%;
+    .wrap_title {
+        height: 200px;
+        padding-bottom: 90px;
+        justify-content: flex-end;
+    }
+
+    .title {
+        font-size: 2.2rem;
     }
 }

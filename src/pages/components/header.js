@@ -9,18 +9,11 @@ export default function Header() {
         <header>
             <div className={styles.container}>
                 <ul className={styles.list}>
-                    <Link to={`/`}><li>Top</li></Link>
-                    <Link to={`/profile/`}><li>About</li></Link>
-                    <Link to={`/work_list`}><li>Work</li></Link>
-                </ul>
-            </div>
-            <div className={styles.container_mini}>
-                <input type="checkbox" id="humburger" name="humburger" className={styles.humburger} />
-                <label htmlFor="humburger" className={styles.menu_humburger}>あああ</label>
-                <ul className={styles.list_mini}>
                     <Link to={`/`}><li>TOP</li></Link>
-                    <Link to={`/profile/`}><li>about</li></Link>
-                    <Link to={`/work_list`}><li>work</li></Link>
+                    <Link to={`/#profile`}><li>プロフィール</li></Link>
+                    <Link to={`/#feature`}><li>特徴</li></Link>
+                    <Link to={`/#work`}><li>事例</li></Link>
+                    <Link to={`/#faq`}><li>よくある質問</li></Link>
                 </ul>
             </div>
         </header>

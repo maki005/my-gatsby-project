@@ -42,10 +42,7 @@ export default function Work({ data }) {
     return (
         <div>
             <Layout>
-                <h1 className="page_title">Work</h1>
-                <div class="page_title_under"></div>
-                <div className="wrap">
-
+                <div className={styles.wrap}>
                     <article>
                         {/* アイキャッチ */}
                         <div className={styles.eyecatch}>
