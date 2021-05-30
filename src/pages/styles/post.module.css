@@ -6,7 +6,7 @@ article {
 
 .article_img {
     width: 100%;
-    margin: 20px 0 80px;
+    margin-top: 20px;
 }
 
 .eyecatch {
@@ -43,16 +43,13 @@ article {
 }
 
 .innerWrap_article h3 {
-    font-size: 1.4rem;
-    margin: 50px 0 10px;
+    font-size: 1.6rem;
+    margin: 80px 0 10px;
+    font-weight: 500;
 }
 
 .innerWrap_article p {
     color: #4D4B4B;
-}
-
-.innerWrap_article ul {
-    margin: 10px 0 20px;
 }
 
 .innerWrap_article li {
@@ -67,6 +64,34 @@ article {
     content: "・";
     display: inline-block;
     font-weight: bold;
+}
+
+/* 課題 */
+.innerWrap_article h3:nth-of-type(1) {
+    margin: 80px 0 0 50px;
+}
+
+.innerWrap_article > ul:first-of-type {
+    background-color: #F8F8F8;
+    padding: 20px;
+    margin: 0 50px 0;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.innerWrap_article > ul:first-of-type > li:first-of-type {
+    margin-bottom: 20px;
+}
+
+.innerWrap_article > ul:first-of-type ul {
+    padding-left: 20px;
+}
+
+
+.innerWrap_article > ul:first-of-type ul li::before {
+    content: "→";
+    display: inline-block;
 }
 
 
