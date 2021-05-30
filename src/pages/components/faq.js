@@ -44,14 +44,13 @@ export default function Feature () {
                     <div className={styles.card}>
                         <div className={styles.text_question}>
                             <div className={styles.label}>Q.</div>
-                            <div>苦手なことは何ですか？</div>
+                            <div>現在の主な業務はなんですか？</div>
                         </div>
                         <div className={styles.text_answer}>
                             <div className={styles.label}>A.</div>
                             <div className="c-text-normal">
-                                装飾をたくさん施した華やかなデザインの経験がなく苦手です。<br />
-                                が、グラフィック力はつけていきたいので、挑戦したいですし、華やかさでなくても
-                                あしらいなどでクオリティが上げられるようにしていきたいと考えています。
+                                7割がWebサイトに関わること、3割がUIなどです。<br />
+                                プロダクトサイトの改修や、コンテンツ見直し・追加などが中心です。また、受託開発も受けているため、UI制作では自社プロダクト以外のUIを作成することもあります。
                             </div>
                         </div>
                     </div>
@@ -65,7 +64,7 @@ export default function Feature () {
                             <div className={styles.label}>A.</div>
                             <div className="c-text-normal">
                                 デザインももちろんですが、基本的にものつくり全般がすきです。<br />
-                                一生物作りに関わりたいと考えていますし、新しいことを知る、できないことができるということに喜びを感じるので、日々学べる環境で働きたいと考えています。
+                                一生物作りに関わりたいと考えており、そのために知識を増やしていきたいと考えています。もともと、新しいことを知る、できないことができるということに喜びを感じるので、日々学べる環境で働きたいです。
                             </div>
                         </div>
                     </div>

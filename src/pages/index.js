@@ -19,9 +19,7 @@ export default function Home({ data }) {
         <div className="attention">
           <h3 className="attention_title">attention</h3>
           <p className="c-text_normal">
-            このポートフォリオサイトでは、システム紹介サイトをモデルに、自信をシステムのように捉え
-            紹介しているサイトです。特徴やよくある質問など、一般のポートフォリオサイトとは少し趣旨
-            が異なるコンテンツもありますが、できるだけ知ってもらいたいという思いから作成しました。
+            このポートフォリオサイトでは、システム紹介サイトをモデルに、私自身をシステムのように捉え、紹介しているサイトです。特徴やよくある質問など、一般のポートフォリオサイトとは少し趣旨が異なるコンテンツもありますが、できるだけ私を知ってもらいたいという思いから作成しました。
           </p>
           </div>
       </section>
@@ -33,13 +31,10 @@ export default function Home({ data }) {
             <div className="section_title profile_title">足立真規&nbsp;&nbsp;<span className="name_e">Maki Adachi</span></div>
             <p className="c-text_normal">
               1994年生まれ<br />
-              BtoB SaaSの開発を行うIT企業に新卒で入社。インハウスデザイナーとして勤務。
-              システムUIから、Webサイト、展示会用のフライヤーなどデザイン全般を担当。
-              製品紹介サイトでは機能説明やシステムの紹介のためのライティングも行うほか、
-              企画やコンテンツの制作なども行う。
+              高知大学卒業後、BtoB SaaSの開発を行うキー・ポイント株式会社に新卒で入社。インハウスデザイナーとして勤務。システムUIから、Webサイト、展示会用のフライヤーなどデザイン全般を担当。自社プロダクトサイトでは機能説明やシステムの紹介のためのライティングも行うほか、企画やコンテンツの制作なども行っています。
             </p>
           </div>
-          <img src="/images/img_profile.svg" />
+          <img src="/images/img_profile.png" />
         </div>
       </section>
 
