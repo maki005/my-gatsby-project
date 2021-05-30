@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../pages/components/layout.js"
+import Layout from "./components/layout.js"
 import styles from "./styles/profile.module.css"
 import "./styles/style.scss"
 
@@ -11,7 +11,6 @@ export default function Profile({ data }) {
         <div>
             <Layout>
                 <h1 className="page_title">About</h1>
-                <div className="page_title_under"></div>
                 <div className={styles.wrap}>
                     <h2><span className="bold f_middle mR_1">足立&nbsp;&nbsp;真規</span>Maki&nbsp;ADACHI</h2>
                     <p>
