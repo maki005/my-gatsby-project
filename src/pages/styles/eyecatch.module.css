@@ -16,17 +16,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .title {
     font-size: 8rem;
     line-height: 1.2;
-    font-family: 'Noto Sans', sans-serif;
+}
+
+.title .color {
+    color: #37c7a6;
+}
+
+.sub_title {
+    font-size: 2rem;
 }
 
 /* ------------------------------
 レスポンシブ
 --------------------------------*/
+@media (max-width: 800px) {
+    .wrap_title {
+        height: 400px;
+    }
+
+    .title {
+        font-size: 6rem;
+    }
+}
+
 @media (max-width: 550px) {
     .eyecatch {
         /* background: url(/images/main_back_s.svg)no-repeat bottom; */
@@ -40,6 +58,6 @@
     }
 
     .title {
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
 }

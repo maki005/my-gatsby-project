@@ -8,8 +8,8 @@ export default function Eyecatch(){
                 <div className={styles.eyecatch}>
                     <div className={styles.inner_eyecatch}>
                         <div className={styles.wrap_title}>
-                            <h1 className={styles.title}>PORTFOLIO</h1>
-                            <div>Web UI/UX Designer</div>
+                            <h1 className={styles.title}>PO<span className={styles.color}>R</span>TFOLIO</h1>
+                            <div className={styles.sub_title}>Web UI/UX Designer</div>
                         </div>
                     </div>
                 </div>
