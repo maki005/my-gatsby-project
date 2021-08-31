@@ -21,8 +21,7 @@ export default function Home({ data }) {
           <div>
             <div className="section_title profile_title">足立真規&nbsp;&nbsp;<span className="name_e">Maki Adachi</span></div>
             <p className="c-text_normal">
-              1994年生まれ<br />
-              高知大学卒業後、BtoB SaaSの開発を行うキー・ポイント株式会社に新卒で入社。インハウスデザイナーとして勤務。システムUIから、Webサイト、展示会用のフライヤーなどデザイン全般を担当。自社プロダクトサイトでは機能説明やシステムの紹介のためのライティングも行うほか、企画やコンテンツの制作なども行っています。
+              高知大学卒業後、BtoB SaaSの自社開発を行うIT企業に新卒で入社。インハウスデザイナーとしてシステムUIから、Webサイト、展示会用のフライヤーなどデザイン全般を担当。自社プロダクトサイトでは企画やコンテンツ制作のほか、ライティングなども行っています。
             </p>
           </div>
           <img src="/images/img_profile.png" />
@@ -33,7 +32,7 @@ export default function Home({ data }) {
 
       <section className="work">
         <a id="work"></a>
-        <h2 className="section_title">事例</h2>
+        <h2 className="section_title">制作物</h2>
           <div className="innerWrap_work">
               {data.allContentfulBlogPost.edges.map(({ node }) => (
                   <div key={node.id} className="wrap_post">

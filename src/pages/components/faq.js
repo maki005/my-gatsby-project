@@ -8,7 +8,7 @@ export default function Feature () {
             <section className="c-back_gray">
                 <a id="faq"></a>
                 <div className={styles.faq_wrap_small}>
-                    <h2 className="section_title">よくある質問</h2>
+                    <h2 className="section_title">Q&A</h2>
 
                     <div className={styles.card}>
                         <div className={`${styles.text_question} ${styles.test}`}>

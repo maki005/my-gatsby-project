@@ -8,7 +8,7 @@ export default function Feature () {
             <section className="c-back_gray">
                 <a id="feature"></a>
                 <div className="c-wrap_large">
-                    <h2 className="section_title">特徴</h2>
+                    <h2 className="section_title">経歴</h2>
 
                     <div className={styles.card}>
                         <img src="/images/img_feature_1.svg" className={styles.card_img} />
