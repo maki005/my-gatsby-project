@@ -9,11 +9,10 @@ export default function Header() {
         <header>
             <div className={styles.container}>
                 <ul className={styles.list}>
-                    <Link to={`/`}><li>TOP</li></Link>
                     <Link to={`/#profile`}><li>プロフィール</li></Link>
-                    <Link to={`/#feature`}><li>特徴</li></Link>
-                    <Link to={`/#work`}><li>事例</li></Link>
-                    <Link to={`/#faq`}><li>よくある質問</li></Link>
+                    <Link to={`/#feature`}><li>経歴</li></Link>
+                    <Link to={`/#work`}><li>制作物</li></Link>
+                    <Link to={`/#faq`}><li>Q&A</li></Link>
                 </ul>
             </div>
         </header>
