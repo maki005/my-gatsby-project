@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .eyecatch {
-    background: url(/images/main_back.svg)no-repeat right;
+    /* background: url(/images/main_back.svg)no-repeat right; */
     text-align: center;
     margin-top: 50px;
 }
@@ -12,7 +12,6 @@
 }
 
 .wrap_title {
-    text-align: left;
     height: 580px;
     display: flex;
     flex-direction: column;
@@ -20,9 +19,9 @@
 }
 
 .title {
-    font-size: 4.2rem;
-    font-family: Noto Sans Display, sans-serif;
+    font-size: 8rem;
     line-height: 1.2;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 /* ------------------------------
@@ -30,7 +29,7 @@
 --------------------------------*/
 @media (max-width: 550px) {
     .eyecatch {
-        background: url(/images/main_back_s.svg)no-repeat bottom;
+        /* background: url(/images/main_back_s.svg)no-repeat bottom; */
         margin-top: 0;
     }
 

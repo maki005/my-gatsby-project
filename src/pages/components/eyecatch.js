@@ -8,10 +8,8 @@ export default function Eyecatch(){
                 <div className={styles.eyecatch}>
                     <div className={styles.inner_eyecatch}>
                         <div className={styles.wrap_title}>
-                            <h1 className={styles.title}>
-                                インハウス<br />Web/UIデザイナー
-                            </h1>
-                            <div>Webデザイン、システムUI、フライヤーまで</div>
+                            <h1 className={styles.title}>PORTFOLIO</h1>
+                            <div>Web UI/UX Designer</div>
                         </div>
                     </div>
                 </div>
