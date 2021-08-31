@@ -15,15 +15,6 @@ export default function Home({ data }) {
       <SEO />
       <Eyecatch />
 
-      <section className="c-wrap_small wrap_attention">
-        <div className="attention">
-          <h3 className="attention_title">attention</h3>
-          <p className="c-text_normal">
-            このポートフォリオサイトでは、システム紹介サイトをモデルに、私自身をシステムのように捉え、紹介しているサイトです。特徴やよくある質問など、一般のポートフォリオサイトとは少し趣旨が異なるコンテンツもありますが、できるだけ私を知ってもらいたいという思いから作成しました。
-          </p>
-          </div>
-      </section>
-
       <section className="c-wrap_large">
       <a id="profile"></a>
         <div className="wrap_profile">

@@ -207,41 +207,6 @@ work_一覧
 /* ------------------------------
 attention
 --------------------------------*/
-.wrap_attention {
-    position: relative;
-}
-
-.wrap_attention::after {
-    content: "";
-    display: block;
-    height: 200px;
-}
-
-.attention {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 40px 100px;
-    box-sizing: border-box;
-    background-color: #FFF;
-    position: absolute;
-    top: -50px;
-}
-
-.attention_title {
-    font-size: 1.4rem;
-}
-
-.attention_title::after {
-    content: "";
-    display: block;
-    width: 10%;
-    border: 3px solid $green;
-    border-radius: 10px;
-    margin: 10px auto 20px;
-}
 
 
 /* ------------------------------
@@ -355,11 +320,6 @@ span.name_e {
 }
 
 @media (max-width: 800px) {
-    // attention
-    .attention {
-        padding: 30px
-    }
-
     .c-wrap_small {
         width: 80%;
     }
@@ -390,15 +350,6 @@ span.name_e {
 
     .card {
         width: inherit;
-    }
-
-    // attention
-    .attention {
-        top: -30px;
-    }
-
-    .wrap_attention::after {
-        height: 250px;
     }
 
     // profile
